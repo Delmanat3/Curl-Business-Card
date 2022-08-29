@@ -9,7 +9,7 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     
     if (req.headers['user-agent'].includes('curl')){
-      res.sendFile(path.join(__dirname, 'public', 'index.html'));
+      res.sendFile(path.join(__dirname, 'public', 'hype.html'));
     }else{
       res.sendFile(path.join(__dirname, 'public', 'honest.html'))
     }
